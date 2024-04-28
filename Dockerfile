@@ -13,8 +13,4 @@ COPY config/proxychains4.conf /etc/proxychains4.conf
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/M507/k/main/files/install-tools.sh)"
 
-RUN updatedb && \
-    apt-get autoremove -y && \
-    apt-get clean 
-
 ENTRYPOINT ["/bin/bash"]
