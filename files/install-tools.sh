@@ -1,1 +1,1 @@
-echo hello
+apt -y install python3-pip
